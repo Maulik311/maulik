@@ -1,0 +1,717 @@
+/* Add this to the end of your CSS file */
+
+/* Mobile devices (max-width: 768px) */
+:root {
+    --black: black;
+    --white: white;
+    --grey: #b0b0b0;
+    --light-grey: #e1e1e1;
+    --dark-grey: #a8a3a3;
+    --cattle-blue: #5e9ea1;
+    --black-grey: #333;
+    --green: #3e8e41;
+    --groom: #949292;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Adjust the layout for mobile devices */
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .navi {
+        flex-direction: column;
+    }
+
+    .input {
+        margin-left: 0;
+    }
+
+    .register {
+        font-size: 30px;
+    }
+
+    .create-account {
+        padding: 20px;
+    }
+
+    .table1 {
+        margin-left: 0;
+    }
+
+    .create-account .radio,
+    .create-account .first-name,
+    .create-account .last-name,
+    .create-account .Form-Email,
+    .create-account .radio,
+    .create-account .cheking {
+        width: 100%;
+        display: grid;
+    }
+
+    ul.navbar-nav.mr-auto {
+        width: 66%;
+    }
+
+    .form-radio {
+        flex-direction: row;
+    }
+
+    .footer-col {
+        width: 50%;
+    }
+}
+
+/* Tablets (max-width: 1024px) */
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .navi {
+        flex-direction: row;
+    }
+
+    .input {
+        margin-left: 50px;
+    }
+
+    .register {
+        font-size: 40px;
+    }
+
+    .create-account {
+        padding: 30px;
+    }
+
+    .table1 {
+        margin-left: 20px;
+    }
+
+    .footer-col {
+        width: 33.33%;
+    }
+}
+
+/* Desktop devices (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {
+    .container {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .navi {
+        flex-direction: row;
+    }
+
+    .input {
+        margin-left: 100px;
+    }
+
+    .register {
+        font-size: 50px;
+    }
+
+    .create-account {
+        padding: 40px;
+    }
+
+    .table1 {
+        margin-left: 30px;
+    }
+
+    .footer-col {
+        width: 25%;
+    }
+}
+
+/* Add this to the end of your CSS file */
+
+/* Make the registration form responsive */
+.create-account {
+    max-width: 600px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--white);
+    border: 1px solid var(--light-grey);
+    box-shadow: 0 0 10px var(--black);
+}
+
+.serch-box .search {
+    border: 1px solid var(--light-grey);
+    outline: none;
+    padding: 6px;
+    position: relative;
+}
+
+button.search-btn {
+    border: none;
+    position: absolute;
+    right: 2%;
+    top:50%;
+    transform: translatey(-50%);
+    background: transparent;
+}
+.radio>button {
+    background-color: var(--black);
+    color: var(--grey);
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    width: 75px;
+    font-family: math;
+    position: absolute;
+    top: 10px;
+    right: 115px;
+}
+
+.create-account .radio,
+.create-account .first-name,
+.create-account .last-name,
+.create-account .Form-Email,
+.create-account .radio,
+.create-account .cheking {
+    /* margin-bottom: 20px; */
+    width: 100%;
+    position: relative;
+}
+
+/* Make the footer responsive */
+/* --------footer start------ */
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.column {
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+footer {
+    background-color: var(--black-grey);
+    color: var(--grey);
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    list-style-type: square;
+    color: var(--dark-grey);
+}
+
+
+@media (max-width: 768px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* For mobile phones */
+    .column {
+        width: 100%;
+    }
+}
+
+/* -----footer end------ */
+
+.shoping-icon {
+    display: ruby;
+}
+
+ul.navbar-nav.mr-auto {
+    width: 66%;
+}
+
+.register-table {
+    max-width: 700px;
+}
+
+.input-item label {
+    width: 30%;
+    font-size: 14px;
+}
+
+.gender {
+    display: flex;
+    margin-bottom: 0;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+/* Make the navigation bar responsive */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background-color: var(--white);
+}
+
+.caption {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.form-radio {
+    padding: 0 10px;
+}
+
+
+.input-item .input-box {
+    position: relative;
+}
+
+.input-item .input-box button {
+    position: absolute;
+    top: 0;
+    background-color: var(--black);
+    color: var(--dark-grey);
+    padding: 0 12px;
+    right: -9px;
+    bottom: 0;
+    border-radius: 4px;
+}
+
+
+.input-item .input-box .input {
+    background-color: var(--white);
+    display: block;
+    outline: none;
+    padding: 4px;
+    margin-left: 10px;
+    width: 100%;
+    border: 1px solid var(--light-grey)
+}
+
+.img {
+    width: 80%;
+}
+
+@media(max-width: 375px) {
+    .input {
+        width: 50%;
+        align-content: center;
+        display: contents;
+    }
+
+    .input-item .input-box .input {
+        margin-left: 0;
+    }
+
+    .gender {
+        margin: 0;
+    }
+
+    .input-item label {
+        width: 100%;
+        margin-bottom: 4px !important;
+    }
+
+    .form-radio {
+        flex-direction: row;
+    }
+
+    ul.ul1 li.w1 {
+        width: inherit;
+    }
+
+    .img {
+        width: 50%;
+    }
+
+    .form-radio {
+        align-items: center;
+    }
+
+    .create-account .radio,
+    .create-account .first-name,
+    .create-account .last-name,
+    .create-account .Form-Email,
+    .create-account .radio,
+    .create-account .cheking {
+        /* margin-bottom: 20px; */
+        width: 100%;
+    }
+
+    .first-name {
+        display: grid;
+    }
+
+    .navi {
+        display: block;
+        width: 100%;
+    }
+}
+
+.navbar1 {
+    margin: 20px 0;
+}
+
+@media(max-width: 767px) {
+    .input {
+        width: 50%;
+        align-content: center;
+        display: contents;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+    }
+
+    .form-radio {
+        flex-direction: row;
+    }
+
+    .img {
+        width: 50%;
+    }
+
+    .form-radio {
+        align-items: center;
+    }
+
+    .create-account .radio,
+    .create-account .first-name,
+    .create-account .last-name,
+    .create-account .Form-Email,
+    .create-account .radio,
+    .create-account .cheking {
+        width: 100%;
+    }
+
+    .first-name {
+        display: grid;
+    }
+
+    .navi {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .input {
+        width: 50%;
+        align-content: center;
+        display: contents;
+    }
+
+    .img {
+        width: 50%;
+    }
+
+    .navi {
+        display: block;
+        width: 100%;
+    }
+}
+
+.Form-Email label {
+    display: inline-block;
+    /* margin-bottom: .5rem; */
+    margin-right: 35px;
+}
+
+@media(max-width: 1440px) {
+    .input {
+        width: 50%;
+        align-content: center;
+        display: contents;
+    }
+
+    .img {
+        width: 50%;
+    }
+
+    .navi {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media(max-width: 2560px) {
+    .input {
+        width: 50%;
+        align-content: center;
+    }
+
+    .img {
+        width: 50%;
+    }
+
+    .navi {
+        display: block;
+        width: 100%;
+    }
+}
+
+
+
+input#last name {
+    WIDTH: 280px;
+    margin-top: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+
+.navbar li {
+    margin-right: 20px;
+    color: var(--black);
+    width: 25%;
+}
+
+li.q1 {
+    color: var(--black);
+    width: 25%;
+}
+
+
+
+.navbar a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.navi {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img {
+    width: 70%;
+}
+
+.cheking {
+    text-align: center;
+}
+
+.selector {
+    text-align: center;
+    margin-left: -43px;
+}
+
+.input {
+    width: 70%;
+    align-content: center;
+}
+
+.navbar3 {
+    background: var(--black);
+    padding: 0px;
+}
+
+ul.ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    /* background-color: black; */
+    color: var(--white);
+    padding: 10px;
+}
+
+li.n1 {
+    width: 15%;
+}
+
+/* Make the navigation bar responsive for smaller screens */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+    }
+
+    ul.ul {
+        display: flex;
+        width: 100%;
+        list-style: none;
+        background-color: var(--black-grey);
+        color: var(--white);
+    }
+
+    li.n1 {
+        width: 15%;
+    }
+}
+
+/* Make the registration form responsive */
+.input-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.create-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.form-radio {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 10px; */
+}
+
+/* Make the registration form responsive for smaller screens */
+
+@media (max-width: 768px) {
+    .create-account {
+        padding: 1rem;
+    }
+
+    .table {
+        flex-direction: column;
+    }
+
+    ul.ul {
+        display: flex;
+        width: 100%;
+        list-style: none;
+        background-color: var(--black-grey);
+        color: var(--white);
+    }
+
+    li.n1 {
+        width: 15%;
+    }
+}
+
+/* Make the footer responsive */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--black-grey);
+    color: var(--white);
+}
+
+.footer-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Make the footer responsive for smaller screens */
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 1rem;
+    }
+
+    .footer-col {
+        margin-bottom: 10px;
+    }
+
+    ul.ul {
+        display: flex;
+        width: 100%;
+        list-style: none;
+        background-color: var(--black-grey);
+        color: var(--white);
+    }
+
+    li.n1 {
+        width: 15%;
+    }
+}
+
+.Form-date {
+    margin-top: 16px;
+}
+
+.bg-light {
+    background-color: var(--black) !important;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .form-radio {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 425px) {}
+
+i.fas.fa-shopping-cart {
+    color: var(--black);
+    font-size: 15px;
+}
+
+.p {
+    color: var(--black);
+}
+
+p {
+
+    margin-bottom: 1rem;
+}
+
+li a {
+    color: var(--white);
+}
+
+.navbar-expand-lg .navbar-nav {
+    width: 50%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+@media(min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 55%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .navbar-expand-lg .navbar-nav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        width: 75%;
+    }
+}

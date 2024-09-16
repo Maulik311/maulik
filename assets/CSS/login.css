@@ -1,0 +1,302 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #f8f8f8;
+}
+
+.navi {
+    display: flex;
+    width: 40%;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    margin-left: 150%;
+}
+
+button.search {
+    background-color: transparent;
+    border: transparent;
+}
+
+input[type="text"] {
+    width: 214px;
+    height: 30px;
+
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1000px;
+    display: block;
+    box-sizing: border-box;
+}
+
+hr.hhhh {
+    width: 80%;
+}
+
+li {
+    list-style: none;
+}
+
+.w1 {
+    width: 70%;
+    padding: 10px;
+    color: black;
+}
+
+.q1 {
+    width: 26%;
+    color: black;
+    padding: 10px;
+}
+
+.navbar3 {
+    background-color: black;
+    color: white;
+}
+
+.ul1 {
+    display: flex;
+    width: 100%;
+
+}
+
+.ul {
+    display: flex;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.n1 {
+    list-style: none;
+    width: 13%;
+    padding: 10px;
+}
+
+.n2 {
+    width: 35%;
+    margin-left: 35%;
+    padding: 10px;
+}
+
+.your-ac {
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 10px;
+}
+
+.login1 {
+    text-align: center;
+    border: 1px solid #9a9a9a;
+    height: 460px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.password {
+    padding-top: 2%;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.email {
+    padding-top: 10%;
+}
+
+.form-detail {
+    height: 32px;
+    width: 200px;
+}
+
+label {
+    font-size: 25px;
+}
+
+button.form-button {
+    padding: 10px;
+    background: black;
+    color: whitesmoke;
+    margin-left: 5px;
+}
+
+.form-password {
+    margin-left: 6px;
+}
+
+.email {
+    padding-top: 10%;
+    margin-bottom: 15px;
+}
+
+label.form-password-name {
+    padding: 11px;
+    padding-left: 30px;
+}
+
+.form-detail {
+    height: 35px;
+    width: 27%;
+}
+
+.Forgate {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.Forgate a {
+    text-decoration: none;
+    color: black;
+}
+
+.signin button {
+    margin-top: 20px;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    width: 100px;
+    margin-bottom: 100px;
+}
+
+.create-ac {
+    padding: 10px;
+}
+
+
+
+
+.text-001 {
+    text-align: center;
+    font-size: 50px;
+    font: 300px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.text-002 {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    color: #a8a3a3;
+    padding-bottom: 30px;
+}
+
+button.SEBSCRIBE a {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+input.form-detail {
+    width: 24%;
+    height: 15px;
+    padding: 13px;
+    border: 2px solid rgb(148, 146, 146);
+}
+
+.txt0007 {
+    text-align: center;
+}
+
+.a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    padding-bottom: 22.2px;
+}
+
+.txt0005 {
+    text-align: left;
+    font-size: 20px;
+    color: cadetblue;
+    max-width: 40%;
+}
+
+.row {
+    display: flex;
+    /* flex-wrap: wrap;
+     */
+}
+
+/* --------footer start------ */
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    /* Center the container */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    width: 25%;
+    /* Divide space for 4 columns */
+    padding: 20px;
+    box-sizing: border-box;
+    /* Include padding in width calculation */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+
+    /* For smaller screens like tablets */
+    .column {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* For mobile phones */
+    .column {
+        width: 100%;
+    }
+}
+
+/* -----footer end------ */

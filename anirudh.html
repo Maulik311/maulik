@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="assest/css/Style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: block;
+            max-width: 1400px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+
+        /* Navbar Start */
+        /* .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+    padding: 6px 119px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+} */
+
+        /* Responsive styles */
+        /* @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+} */
+        /* navbar over */
+
+
+        /* Slider image start */
+        .slider-item {
+            width: 100%;
+        }
+
+        .inner-item {
+            display: flex;
+            padding: 8px;
+            flex-wrap: wrap;
+        }
+
+        .item-left {
+            width: 30%;
+        }
+
+        .item-right {
+            width: 70%;
+        }
+
+        .item-left>img {
+            width: 100%;
+        }
+
+        .item-right>img {
+            width: 100%;
+            height: 100%;
+            padding-left: 20px;
+        }
+
+        @media(max-width:640px) {
+
+            .inner-item .item-left,
+            .inner-item .item-right {
+                width: 100%;
+            }
+
+            .item-right>img {
+                padding: 0;
+            }
+        }
+
+
+        .gellery-item-main {
+            padding: 20px;
+
+
+        }
+
+
+
+
+
+        .inner-gellery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+
+        .gellery-item {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            padding: 4px 0;
+        }
+
+
+        .gellery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .gellery-item {
+                flex: 1 1 calc(50% - 15px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gellery-item {
+                flex: 1 1 100%;
+            }
+        }
+
+
+
+        /* horizantal line start */
+        .gellery-item-main h2 {
+            line-height: 3;
+        }
+
+        /* horizantal line end */
+
+
+
+
+
+        /* Basic reset and styling */
+
+
+        .product-outer {
+            padding: 20px;
+        }
+
+
+
+        .product-inner {
+            display: flex;
+
+        }
+
+        .product {
+            flex: 1;
+            padding: 5px;
+            background-color: #fff;
+            margin: 0 3px;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 2px solid #e0dfdf;
+        }
+
+        /* product-price and name in center */
+        .product-detail {
+            text-align: center;
+            line-height: 30px;
+            padding: 28px 0;
+        }
+
+        /* product-price and name in center over*/
+        .product-name {
+            font-size: 19px;
+        }
+
+        .product-price {
+            color: #9dc02e;
+        }
+
+        @media (max-width: 768px) {
+            .product-inner {
+                flex-direction: column;
+            }
+
+            .product {
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product {
+                flex: 1 1 100%;
+            }
+
+            .product-inner {
+                padding: 0;
+            }
+        }
+
+
+
+
+        /* Add this CSS in your Style.css file */
+
+
+
+        .ball-item-inner {
+            display: flex;
+            justify-content: center;
+        }
+
+        .ball-item img {
+            width: 100%;
+            height: auto;
+
+        }
+
+
+
+
+        @media (max-width: 768px) {
+            .ball-item {
+                padding: 15px;
+            }
+        }
+
+
+        @media (max-width: 480px) {
+            .ball-item {
+                padding: 10px;
+            }
+        }
+
+
+        /* horizantal line start */
+        .product-outer h2 {
+            line-height: 3;
+            margin-bottom: 30px;
+        }
+
+        /* horizantal line end */
+
+
+
+        .sport-item {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+
+        .sport-item-img1,
+        .sport-item-img2 {
+            flex: 1;
+            min-width: 200px;
+        }
+
+
+        .sport-item-img1 img,
+        .sport-item-img2 img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+
+
+
+
+
+
+
+
+
+        /* General styling for review-item */
+        .review-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 18px;
+        }
+
+
+        .review-item img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .content-item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .review-item-info {
+            margin-bottom: 10px;
+        }
+
+        .review-item-info img {
+            width: 50px;
+            height: auto;
+        }
+
+
+        .content-item p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+
+        .content-inner {
+            font-size: 16px;
+        }
+
+        .content-name {
+            font-weight: bold;
+        }
+
+        .content-designation {
+            color: #777;
+        }
+
+
+        @media (max-width: 768px) {
+            .review-item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .review-item img {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .review-item-info img {
+                width: 40px;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+        .footer-before {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .block_newsletter {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .newsletter-logo {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .newsletter-logo img {
+            width: 50px;
+            /* Set image width */
+            height: auto;
+            /* Maintain aspect ratio */
+        }
+
+        .newsletter-inner {
+            flex: 2;
+            text-align: center;
+            margin: 0 20px;
+        }
+
+        .newsletter-message h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .newsletter-message span {
+            display: block;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        .search {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .search input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        .search button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* Responsive design adjustments */
+        @media (max-width: 768px) {
+            .block_newsletter {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .newsletter-inner {
+                margin: 20px 0;
+            }
+        }
+
+
+
+
+
+
+        /* General Styling */
+        .main-itemm {
+            background-image: url(../Image/web23.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .main-outer-inner {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 15px;
+            align-items: center;
+        }
+
+        .left-item {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+            line-height: 1.4;
+            padding-top: 5px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .right-item {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        input[type="email"] {
+            padding: 10px;
+            border: 1px solid #ddd;
+            flex: 1;
+            min-width: 150px;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: #9dc02e;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            flex: 1;
+            min-width: 120px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .main-outer-inner {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left-item {
+                margin-left: 0;
+                margin-bottom: 15px;
+                align-items: center;
+            }
+
+            .right-item {
+                width: 100%;
+            }
+
+            .input-group {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            input[type="email"],
+            button {
+                width: 100%;
+                min-width: auto;
+            }
+
+            button {
+                margin-top: 10px;/
+            }
+        }
+
+        @media (max-width: 480px) {
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Slider image start-->
+    <div class="slider-item">
+        <div class="container">
+            <div class="inner-item">
+                <div class="item-left">
+                    <img src="assest/Image/web1.jpg" alt="image">
+                    <img src="assest/Image/web3.jpg" alt="image">
+                </div>
+                <div class="item-right">
+                    <img src="assest/Image/web2.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+    .
+    <!-- Slider image over-->
+
+    <!-- gellery item start -->
+    <div class="gellery-item-main">
+        <div class="container">
+            <div class="inner-gellery">
+                <div class="gellery-item ">
+                    <img src="assest/Image/web4.jpg" alt="image">
+                </div>
+                <div class="gellery-item ">
+                    <img src="assest/Image/web5.jpg" alt="image">
+                </div>
+                <div class="gellery-item ">
+                    <img src="assest/Image/web6.jpg" alt="image">
+                </div>
+            </div>
+            <!-- horizantal line start -->
+            <div class="conatiner">
+                <h2>
+                    <span>Featured Collections</span>
+                    <hr 2px>
+                </h2>
+            </div>
+            <!-- horizantal line over-->
+        </div>
+
+    </div>
+
+
+
+
+    <!-- gellery item over-->
+    <div class="product-outer">
+        <div class="container">
+            <div class="product-inner">
+                <div class="product">
+                    <img src="assest/Image/web7.jpg" alt="image">
+                    <div class="product-detail">
+                        <div class="product-name">perspiciatis unde</div>
+                        <div class="product-price">$99.00</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assest/Image/web8.jpg" alt="image">
+                    <div class="product-detail">
+                        <div class="product-name">omnis iste</div>
+                        <div class="product-price">$199.00</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assest/Image/web9.jpg" alt="image">
+                    <div class="product-detail">
+                        <div class="product-name">accusantium dolore</div>
+                        <div class="product-price">$299.00</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assest/Image/web10.jpg" alt="image">
+                    <div class="product-detail">
+                        <div class="product-name">rem aperia</div>
+                        <div class="product-price">$249.00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-inner">
+                <div class="product">
+                    <img src="assest/Image/web11.jpg" alt="image">
+                    <div class="product-detail">
+                        <div class="product-name">adipisci velit</div>
+                        <div class="product-price">$289.00</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assest/Image/web12.jpg" alt="image">
+                    <div class="product-detail">
+                        <div class="product-name">numquam eius</div>
+                        <div class="product-price">$279.00</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assest/Image/web13.jpg" alt="image">
+                    <div class="product-detail">
+                        <div class="product-name">modi tempora</div>
+                        <div class="product-price">$349.00</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assest/Image/web14.jpg" alt="image">
+                    <div class="product-detail">
+                        <div class="product-name">dolore magnam</div>
+                        <div class="product-price">$399.00</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ball-item">
+
+                <div class="ball-item-inner">
+                    <img src="assest/Image/web15.jpg" alt="image">
+                </div>
+
+
+            </div>
+            <!-- horizantal line start -->
+            <h2>
+                <span>Featured Collections</span>
+                <hr 2px>
+            </h2>
+            <!-- horizantal line over-->
+
+            <div class="product-inner">
+                <div class="product">
+                    <img src="assest/Image/web16.jpg" alt="image">
+                    <div class="product-detail">
+                        <div class="product-name">architecto beatae</div>
+                        <div class="product-price">$359.00</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assest/Image/web17.jpg" alt="image">
+                    <div class="product-detail">
+                        <div class="product-name">numquam eius</div>
+                        <div class="product-price">$279.00</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assest/Image/web18.jpg" alt="image">
+                    <div class="product-detail">
+                        <div class="product-name">modi tempora</div>
+                        <div class="product-price">$349.00</div>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="assest/Image/web19.jpg" alt="image">
+                    <div class="product-detail">
+                        <div class="product-name">dolore magnam</div>
+                        <div class="product-price">$399.00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sport-item">
+                <div class="sport-item-img1">
+                    <img src="assest/Image/web20.jpg" alt="image">
+                </div>
+                <div class="sport-item-img2">
+                    <img src="assest/Image/web21.jpg" alt="image">
+                </div>
+            </div>
+            <div class="review-item">
+                <img src="assest/Image/web22.jpg" alt="image">
+                <div class="content-item">
+                    <div class="review-item-info"><img src="assest/Image/double cotation.png" alt="image"></div>
+                    <p>Donec ultrices eros erat, non mattis risus vestibulum vel. Donec mauris sem, rutrum consequat
+                        rutum
+                        vel, consequat bibendum ex At vero accusamus et iusto odio dignissimos ducimus Sed perspiciatis
+                        unde
+                        omnis adipisicing natus error eiusmod voluptatem</p>
+                    <div class="content-inner"><span class="content-name">David Saba</span>
+                        <br> <span class="content-designation">Happy
+                            Customer</span>
+                    </div>
+                </div>
+            </div>
+            <div class="main-itemm">
+                <div class="main-outer-inner">
+                    <div class="icon">
+                        <img src="assest/Image/message.png" alt="">
+                    </div>
+                    <div class="left-item">
+                        <h2>Sign up and save!</h2>
+                        <p>Exclusive email offers & Limited time discount specials</p>
+                    </div>
+                    <div class="right-item">
+                        <div class="input-group">
+                            <input type="email" placeholder="Your email address">
+                            <button>Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+    
